@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="712.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <JFXTabPane fx:id="tabbbbbb" prefHeight="730.0" prefWidth="516.0" side="BOTTOM">
+         <tabs>
+            <Tab text=" ">
+               <content>
+                  <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="398.0" style="-fx-background-color: white;" styleClass="mainFxmlClass">
+                     <children>
+                        <HBox alignment="CENTER" style="-fx-background-color: #4527A0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="290.0" fitWidth="600.0" layoutX="-32.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="310.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+                                 <effect>
+                                    <ColorAdjust brightness="-0.61" contrast="0.56" hue="0.32" saturation="0.3" />
+                                 </effect>
+                                 <image>
+                                    <Image url="@../images/Early-Stage-Breast-Cancer-Do-you-Really-Need-Your-Lymph-Nodes-Removed-1440x810.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <VBox layoutY="225.0" prefHeight="329.0" prefWidth="435.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="225.0">
+                           <children>
+                              <VBox layoutY="184.0" prefHeight="248.0" prefWidth="423.0" spacing="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <children>
+                                    <HBox alignment="CENTER" layoutX="64.0" layoutY="184.0" prefHeight="108.0" prefWidth="352.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                       <children>
+                                          <Pane prefHeight="109.0" prefWidth="109.0" style="-fx-background-color: white; -fx-background-radius: 20000;">
+                                             <children>
+                                                <ImageView fitHeight="106.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                                   <effect>
+                                                      <ColorAdjust brightness="-0.72" contrast="0.4" hue="-0.63" saturation="-1.0" />
+                                                   </effect>
+                                                   <image>
+                                                      <Image url="@../images/Circled%20User%20Male_96px_1.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </HBox>
+                                    <VBox layoutX="15.0" layoutY="338.0" spacing="40.0" AnchorPane.bottomAnchor="157.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                       <children>
+                                          <JFXTextField fx:id="username" focusColor="#42565f" labelFloat="true" layoutX="15.0" layoutY="338.0" prefHeight="25.0" prefWidth="263.0" promptText="Username" unFocusColor="#506974" VBox.vgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <JFXPasswordField fx:id="password" focusColor="#42565f" labelFloat="true" layoutX="42.0" layoutY="387.0" prefHeight="25.0" prefWidth="239.0" promptText="Password" unFocusColor="#506974" VBox.vgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </JFXPasswordField>
+                                       </children>
+                                       <padding>
+                                          <Insets left="40.0" right="40.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="63.0" layoutY="447.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <children>
+                                    <JFXButton layoutX="63.0" layoutY="447.0" onAction="#login" prefHeight="37.0" prefWidth="224.0" style="-fx-background-color: #202256; -fx-background-radius: 0  30 30 0;" text="Login " textFill="#f5f4f4" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dont have an account ? please Click to signup &gt;&gt;&gt; " />
+                                    <JFXButton layoutX="10.0" layoutY="10.0" onAction="#signup" prefHeight="25.0" prefWidth="63.0" style="-fx-background-radius: 0  30 30 0;" text="Signup" textFill="#1e09a4" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox layoutX="14.0" layoutY="2.1806640625" AnchorPane.bottomAnchor="569.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox prefHeight="31.0" prefWidth="362.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In">
+                                       <font>
+                                          <Font size="23.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <JFXButton fx:id="minimize" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#minimize" prefHeight="30.0" prefWidth="30.0" ripplerFill="#1f0068" style="-fx-background-color: orange; -fx-background-radius: 20000;" text="--" textFill="#f2f0f0">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </JFXButton>
+                              <JFXButton maxHeight="-Infinity" maxWidth="-Infinity" onAction="#exit" prefHeight="30.0" prefWidth="30.0" ripplerFill="#1b0851" style="-fx-background-color: red; -fx-background-radius: 20000;" text="X" textFill="#f2f0f0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text=" ">
+               <content>
+                  <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="398.0" style="-fx-background-color: white;" styleClass="mainFxmlClass">
+                     <children>
+                        <HBox alignment="CENTER" style="-fx-background-color: #4527A0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="290.0" fitWidth="600.0" layoutX="-32.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="310.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+                                 <effect>
+                                    <ColorAdjust brightness="-0.61" contrast="0.56" hue="0.32" saturation="0.3" />
+                                 </effect>
+                                 <image>
+                                    <Image url="@../images/Early-Stage-Breast-Cancer-Do-you-Really-Need-Your-Lymph-Nodes-Removed-1440x810.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <VBox alignment="BOTTOM_CENTER" layoutY="225.0" prefHeight="329.0" prefWidth="435.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="225.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" layoutX="63.0" layoutY="447.0" prefHeight="394.0" prefWidth="516.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <children>
+                                    <JFXButton onAction="#signinn" prefHeight="37.0" prefWidth="224.0" style="-fx-background-radius: 0  30 30 0; -fx-background-color: gray;" text="Signin" textFill="#1e09a4" />
+                                    <JFXButton layoutX="63.0" layoutY="447.0" onAction="#signin" prefHeight="37.0" prefWidth="224.0" style="-fx-background-color: #202256; -fx-background-radius: 0  30 30 0;" text="Regester" textFill="#f5f4f4" />
+                                    <VBox alignment="CENTER" prefHeight="396.0" prefWidth="533.0" spacing="40.0">
+                                       <padding>
+                                          <Insets left="40.0" right="40.0" />
+                                       </padding>
+                                       <children>
+                                          <VBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="396.0" prefWidth="358.0" spacing="19.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 8; -fx-background-color: white;">
+                                             <children>
+                                                <JFXTextField fx:id="username1" focusColor="#038d03" labelFloat="true" prefHeight="25.0" prefWidth="263.0" promptText="Username" style="-fx-prompt-text-fill: green; -fx-text-inner-color: green;" unFocusColor="#3f6107" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets left="10.0" top="5.0" />
+                                                   </padding>
+                                                </JFXTextField>
+                                                <JFXPasswordField fx:id="password1" focusColor="GREEN" labelFloat="true" prefHeight="25.0" prefWidth="239.0" promptText="Password" style="-fx-text-inner-color: green; -fx-prompt-text-fill: green;" unFocusColor="#3f6107" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets left="10.0" top="5.0" />
+                                                   </padding>
+                                                </JFXPasswordField>
+                                                <JFXPasswordField fx:id="retype" focusColor="#42565f" labelFloat="true" prefHeight="25.0" prefWidth="239.0" promptText="Retype Password" style="-fx-text-inner-color: green; -fx-prompt-text-fill: green;" unFocusColor="#506974">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets left="10.0" top="5.0" />
+                                                   </padding>
+                                                </JFXPasswordField>
+                                                <JFXComboBox fx:id="userr" focusColor="#059405" labelFloat="true" prefHeight="25.0" prefWidth="311.0" promptText="select User" style="-fx-text-inner-color: green; -fx-prompt-text-fill: green;" unFocusColor="#196b02">
+                                                   <padding>
+                                                      <Insets left="10.0" top="5.0" />
+                                                   </padding>
+                                                </JFXComboBox>
+                                                <JFXTextField fx:id="name2" focusColor="GREEN" labelFloat="true" prefHeight="29.0" prefWidth="184.0" promptText="Patients Name" style="-fx-text-inner-color: green; -fx-prompt-text-fill: green;" unFocusColor="#395a07">
+                                                   <padding>
+                                                      <Insets left="10.0" top="5.0" />
+                                                   </padding>
+                                                </JFXTextField>
+                                                <JFXTextField fx:id="phone2" focusColor="#038d03" labelFloat="true" layoutX="10.0" layoutY="10.0" prefHeight="29.0" prefWidth="184.0" promptText="Patients Phone Number" style="-fx-text-inner-color: green; -fx-prompt-text-fill: green;" unFocusColor="#3f6107">
+                                                   <padding>
+                                                      <Insets left="10.0" top="5.0" />
+                                                   </padding>
+                                                </JFXTextField>
+                                                <JFXTextField fx:id="age2" focusColor="#038d03" labelFloat="true" layoutX="10.0" layoutY="39.0" prefHeight="29.0" prefWidth="184.0" promptText="Patients Age" style="-fx-text-inner-color: green; -fx-prompt-text-fill: green;" unFocusColor="#3f6107">
+                                                   <padding>
+                                                      <Insets left="10.0" top="5.0" />
+                                                   </padding>
+                                                </JFXTextField>
+                                                <JFXTextArea fx:id="address2" focusColor="GREEN" prefHeight="82.0" prefWidth="318.0" promptText="Patients Address" style="-fx-text-fill: green; -fx-prompt-text-fill: green;" unFocusColor="#395a07">
+                                                   <opaqueInsets>
+                                                      <Insets left="10.0" />
+                                                   </opaqueInsets>
+                                                   <padding>
+                                                      <Insets left="10.0" top="5.0" />
+                                                   </padding>
+                                                </JFXTextArea>
+                                                <HBox spacing="10.0">
+                                                   <children>
+                                                      <JFXRadioButton fx:id="male2" onAction="#genoo" text="Male" textFill="GREEN" underline="true">
+                                                         <effect>
+                                                            <Lighting>
+                                                               <bumpInput>
+                                                                  <Shadow />
+                                                               </bumpInput>
+                                                               <light>
+                                                                  <Light.Distant />
+                                                               </light>
+                                                            </Lighting>
+                                                         </effect>
+                                                         <font>
+                                                            <Font size="9.0" />
+                                                         </font>
+                                                         <toggleGroup>
+                                                            <ToggleGroup fx:id="gender2" />
+                                                         </toggleGroup>
+                                                      </JFXRadioButton>
+                                                      <JFXRadioButton fx:id="female2" layoutX="10.0" layoutY="97.0" onAction="#genoo" text="Female" textFill="GREEN" toggleGroup="$gender2" underline="true">
+                                                         <effect>
+                                                            <Lighting>
+                                                               <bumpInput>
+                                                                  <Shadow />
+                                                               </bumpInput>
+                                                               <light>
+                                                                  <Light.Distant />
+                                                               </light>
+                                                            </Lighting>
+                                                         </effect>
+                                                         <font>
+                                                            <Font size="9.0" />
+                                                         </font>
+                                                      </JFXRadioButton>
+                                                      <Label fx:id="sel2" text="ben" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="2.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets left="20.0" right="20.0" top="10.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox layoutX="14.0" layoutY="2.1806640625" AnchorPane.bottomAnchor="569.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox prefHeight="31.0" prefWidth="362.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up">
+                                       <font>
+                                          <Font size="23.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <JFXButton fx:id="minimize1" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#minimize11" prefHeight="30.0" prefWidth="30.0" ripplerFill="#1f0068" style="-fx-background-color: orange; -fx-background-radius: 20000;" text="--" textFill="#f2f0f0">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </JFXButton>
+                              <JFXButton maxHeight="-Infinity" maxWidth="-Infinity" onAction="#exit" prefHeight="30.0" prefWidth="30.0" ripplerFill="#1b0851" style="-fx-background-color: red; -fx-background-radius: 20000;" text="X" textFill="#f2f0f0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

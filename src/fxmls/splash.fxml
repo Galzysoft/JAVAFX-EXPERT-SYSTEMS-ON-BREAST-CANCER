@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="377.0" prefWidth="584.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SplashController">
+   <children>
+      <ImageView fx:id="imm" fitHeight="389.0" fitWidth="600.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Early-Stage-Breast-Cancer-Do-you-Really-Need-Your-Lymph-Nodes-Removed-1440x810.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.2" contrast="0.81" hue="-0.02" saturation="-0.13" />
+         </effect>
+      </ImageView>
+      <Pane fx:id="logo" layoutX="230.0" layoutY="266.0" prefHeight="66.0" prefWidth="154.0" style="-fx-background-color: #202256; -fx-background-radius: 20;" translateY="-350.0">
+         <children>
+            <Text fill="#1f0068" layoutX="63.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Powered by" />
+            <Text fill="#1f0068" layoutX="68.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GalzySoft" wrappingWidth="51.4765625" />
+            <Text fill="#bcade8" layoutX="68.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GalzySoft" wrappingWidth="51.4765625" />
+            <Text fill="#bcade8" layoutX="63.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Powered by" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <JFXSpinner layoutX="184.0" layoutY="145.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="246.0" />
+      <Text fill="#a4a6d0" layoutX="21.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Breast Cancer expert system Diagnosis" textAlignment="CENTER" wrappingWidth="541.6298828125">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
